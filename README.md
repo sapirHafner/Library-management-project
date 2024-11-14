@@ -11,6 +11,9 @@ The Library Management System consists of four main services:
 - **MongoDB Service**: Serves as the database for storing data related to books, ratings, and loans.
 - **NGINX Reverse Proxy**: Directs traffic to the appropriate service and enforces access policies.
 
+
+
+
 ## Architecture
 
 The application is composed of the following Docker containers:
@@ -29,6 +32,8 @@ The application is composed of the following Docker containers:
 - **Books Service** (`/books`, `/ratings`, `/top`): Accessible on port 5001. Handles requests related to books, including fetching book information, getting ratings, and listing top-rated books.
 - **Loans Service** (`/loans`): Accessible on port 5002. Handles requests for managing book loans.
 - **NGINX Proxy**: Routes requests to the appropriate service based on URL path and access policy. It enforces read-only access for public users and full access for specific roles (e.g., librarians).
+
+
 
 ## Access Policies
 
