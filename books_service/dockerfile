@@ -1,0 +1,10 @@
+FROM python:alpine3.19
+WORKDIR /app
+COPY . /app
+RUN pip install python-dotenv
+RUN pip install flask
+RUN pip install flask_restful
+RUN pip install requests
+RUN pip install pymongo
+EXPOSE 5001
+CMD ["python", "app.py"]
