@@ -20,7 +20,9 @@ The application is composed of the following Docker containers:
 - **MongoDB Container**: Stores data about books, loans, and ratings. Communicates with both Books and Loans services for data persistence.
 - **NGINX Container**: Acts as a reverse proxy, routing requests to the Books and Loans services and enforcing access policies. It listens on port 80 and routes traffic to the respective service based on request type.
 
+## Diagram
 
+![Architecture Diagram](docs/Diagram.png)
 
 ## Services and Endpoints
 
